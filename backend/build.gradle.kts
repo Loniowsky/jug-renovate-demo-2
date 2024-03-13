@@ -34,7 +34,7 @@ dependencies {
 // https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
 
-    implementation("com.amazonaws:aws-java-sdk-dynamodb:1.12.556")
+    implementation("com.amazonaws:aws-java-sdk-dynamodb:1.12.671")
 
     implementation("io.github.oshai:kotlin-logging-jvm:5.1.0")
 
