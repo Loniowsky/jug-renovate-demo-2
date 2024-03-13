@@ -1,0 +1,33 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    ":prHourlyLimit4",
+    ":prConcurrentLimit10"
+  ],
+  "timezone": "Europe/Warsaw",
+  "minimumReleaseAge": "10 days",
+  "packageRules": [
+    {
+      "matchCategories": [
+        "docker"
+      ],
+      "groupName": "Docker",
+      "assignees": ["Loniowsky"]
+    },
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "matchManagers": [
+        "gradle",
+        "gradle-wrapper"
+      ],
+      "platformAutomerge": true,
+      "automerge": true
+    }
+  ]
+}
