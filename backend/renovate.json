@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "config:best-practices"
+  ],
+  "timezone": "Europe/Warsaw",
+  "minimumReleaseAge": "3 days",
+  "platformAutomerge": true,
+  "automergeType": "branch",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "matchCurrentVersion": "!/^0/",
+      "dependencyDashboardApproval": true,
+      "extends": [
+        "schedule:nonOfficeHours"
+      ]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true,
+      "extends": [
+        "schedule:automergeNonOfficeHours"
+      ]
+    }
+  ]
+}

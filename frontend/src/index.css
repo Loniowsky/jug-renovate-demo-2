@@ -1,0 +1,157 @@
+:root {
+  --primary-70: #a85f00;
+  --primary-90: #d87a00;
+  --primary-100: #f08700;
+  --primary-140: #f6b766;
+  --primary-170: #fbdbb3;
+  --primary-180: #fce7cc;
+  --primary-190: #fef3e6;
+
+  --neutral-40: #1c1c1d;
+  --neutral-60: #2b2b2c;
+  --neutral-80: #39393a;
+  --neutral-100: #474749;
+  --neutral-120: #6c6c6d;
+  --neutral-140: #919192;
+  --neutral-160: #b5b5b6;
+  --neutral-170: #d3d3d3;
+  --neutral-180: #ededed;
+  --neutral-190: #f8f8f8;
+  --neutral-200: #ffffff;
+
+  --info-80: #7094ae;
+  --info-100: #8cb9da;
+  --info-190: #f4f9fc;
+
+  --grey-100: #b5b5b6;
+  --grey-190: #f8f8f8;
+
+  --red-100: #ee7575;
+  --red-190: #fdf1f1;
+
+  --orange-100: #f69a67;
+  --orange-190: #fef8f2;
+
+  --yellow-100: #facc2b;
+  --yellow-190: #fefcf2;
+
+  --lime-100: #cbdd63;
+  --lime-190: #fafdf4;
+
+  --green-100: #93e08c;
+  --green-190: #f5fcf6;
+
+  --turquoise-100: #7edcc6;
+  --turquoise-190: #f4fcfa;
+
+  --blue-100: #8cb9da;
+  --blue-190: #f4f9fc;
+
+  --violet-100: #929edc;
+  --violet-190: #f4f5fc;
+
+  --purple-100: #d292dc;
+  --purple-190: #fcf4fa;
+
+  --pink-100: #f491b4;
+  --pink-190: #fef7f9;
+
+  --shadow-0: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  --shadow-1: 0px 0px 3px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-2: 0px 0px 3px rgba(0, 0, 0, 0.05), 0px 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-3: 0px 0px 3px rgba(0, 0, 0, 0.05), 0px 8px 24px rgba(0, 0, 0, 0.16);
+
+  --border-radius-0: 0px;
+  --border-radius-1: 4px;
+  --border-radius-2: 8px;
+  --border-radius-3: 16px;
+  --border-radius-4: 24px;
+  --border-radius-5: 32px;
+
+  --backdrop: rgba(0, 0, 0, 0.75);
+
+  --z-index-below: -1;
+  --z-index-0: 0;
+  --z-index-above: 1;
+  --z-index-inf: 2147483647;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+}
+
+img,
+svg {
+  display: block;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background);
+  color: var(--neutral-100);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  overflow: auto;
+  overflow: overlay;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--neutral-180);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--neutral-160);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--neutral-140);
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}

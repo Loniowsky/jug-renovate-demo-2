@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CoogleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="demo.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.wektorzabrze.coogle.CoogleApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
